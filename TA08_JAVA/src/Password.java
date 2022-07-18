@@ -1,74 +1,36 @@
 
 public class Password {
 
+	// Atributos:
+
+	private static int longitud;
+	private String contraseña;
+
+	// Constructores:
+
+	// Constructor por defecto
+	public Password() {
+
+		this.longitud = 8;
+		this.contraseña = contraseña;
+	}
+
+	// Constructor
+	public Password(int longitud, String contraseña) {
+		this.longitud = longitud;
+		this.contraseña = contraseña;
+	}
+
+	// Generador de contraseña con longitud definida
+
+	public static String genPasswd(int longitud) {
+		String resultado="";
+		String alfanum = "012345ABCDEabcde";
+
+		for (int i = 0; i < longitud; i++) {
+			resultado += alfanum.charAt((int) Math.floor(Math.random() * alfanum.length()));
+		}
+		return resultado;
 	
-	//Atributos:
-	
-		private int longitud;
-		private String contraseña;
-		
-		
-	//Constructores:
-		
-	//Constructor por defecto:
-	
-		public Password() {
-			
-			this.longitud =8;
-			this.contraseña = "";}
-		
-	//Constructor con longitud aplicada. Genera contraseña aleatoria con longitud definida
-		
-		public Password(int longitud, String contraseña) {
-			
-			this.longitud = longitud;
-			this.contraseña = contraseña;}
-
-		public int getLongitud() {
-			return longitud;
-		}
-
-		public void setLongitud(int longitud) {
-			this.longitud = longitud;
-		}
-
-		
-		public String getContraseña() {
-			return contraseña;
-		}
-
-		public void setContraseña(String contraseña) {
-			this.contraseña = contraseña;
-		}
-
-		@Override
-		public String toString() {
-			return "Password [longitud=" + longitud + ", contraseña=" + contraseña + "]";
-		}
-
-		
-		  
-		 public String generador() {
-			 String caracteres="ab157_?!";
-			 
-			 String num=Math.floor(Math.random()*(8+1);
-		
-			 return num;
-		 }
+	}
 }
-		
-
-
-
-		
-		
-		
-		 
-	
-		
-		
-	
-		
-		
-			
-
