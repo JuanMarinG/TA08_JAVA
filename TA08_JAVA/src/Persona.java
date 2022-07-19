@@ -1,8 +1,6 @@
 
 public class Persona {
 
-	//Crear atributos nombre, edad, DNI, sexo (hombre por defecto), peso y altura
-	
 	
 	//Atributos:
 	
